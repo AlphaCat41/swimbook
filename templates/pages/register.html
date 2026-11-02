@@ -1,0 +1,22 @@
+{{ define "content" }}
+<form method="post" action="/register" class="auth-form">
+    <h1>{{.title}}</h1>
+    <div class="input-container">
+        <label for="email" class="label">Email:</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com">
+    </div>
+    <div class="input-container">
+        <label for="password" class="label">Password:</label>
+        <input type="password" id="password" name="password" placeholder="********">
+    </div>
+    <div class="input-container">
+        <label for="confirm-password" class="label">Comfirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="********">
+    </div>
+
+    <input type="submit" value="สมัครสมาชิก" class="submit-btn">
+    <p>มีบัญชีอยู่แล้ว? <a href="/login">เข้าสู่ระบบ</a></p>
+</form>
+
+
+{{ end }}
