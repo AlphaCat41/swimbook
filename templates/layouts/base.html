@@ -1,0 +1,25 @@
+{{ define "layouts/base.html" }}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบจองลู่สระว่ายน้ำ</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+    <div id="main-container">
+        <!-- This is where the page content will be injected -->
+        {{ template "content" . }}
+
+        <footer>
+            <p>© 2026 My Web App</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
+{{ end }}
