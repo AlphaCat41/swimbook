@@ -56,3 +56,9 @@ body {
 .input-box {
     padding: 5px;
 }
+
+.registered-alert {
+    background-color: orange;
+    color: white;
+    padding: 10px;
+}

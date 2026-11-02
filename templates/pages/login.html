@@ -1,4 +1,10 @@
 {{ define "content" }}
+{{if .alert}}
+<p class="registered-alert">{{.alert}}</p>
+{{else}}
+
+{{end}}
+
 <form method="post" action="/login" class="auth-form">
     <h1>{{.title}}</h1>
     <div class="input-container">

@@ -12,6 +12,7 @@ func handleRequest() {
 	router.Static("/static", "./static")
 	router.GET("/", handlers.DashboardPage)
 	router.GET("/login", handlers.LoginPage)
+	router.POST("/register", handlers.RegisterPost)
 	router.GET("/register", handlers.RegisterPage)
 
 	fmt.Println("[/] Server start at http://localhost:8080/")
