@@ -1,8 +1,10 @@
 {{ define "content" }}
 {{if .alert}}
 <p class="registered-alert">{{.alert}}</p>
-{{else}}
+{{end}}
 
+{{if .error}}
+<p id="alert-confirm-pass">{{.error}}</p>
 {{end}}
 
 <form method="post" action="/login" class="auth-form">
@@ -15,10 +17,8 @@
         <label for="password" class="label">Password:</label>
         <input type="password" id="password" name="password" placeholder="********" class="input-box" required>
     </div>
-
     <input type="submit" value="เข้าสู่ระบบ" class="submit-btn">
     <p class="label">ยังไม่มีบัญชี? <a href="/register" class="label">ลงทะเบียน</a></p>
 </form>
-
 
 {{ end }}
