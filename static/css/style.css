@@ -7,6 +7,8 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+
+    background-color: white;
 }
 
 #main-container {
@@ -21,7 +23,7 @@ body {
     align-items: center;
     border: 2px solid;
     padding: 10px;
-    background-image: linear-gradient(#00FFFF, #0096FF);
+    background-image: linear-gradient(black, #1F51FF);
 
 }
 
@@ -38,13 +40,18 @@ body {
 .submit-btn {
     margin: 15px;
     padding: 5px;
-    background-color: #0000FF;
+    background-color: #4169E1;
     color: white;
 }
 
 .label {
     padding-top: 10px;
     padding-bottom: 10px;
+    color: white;
+}
+
+.main-title {
+    color: white;
 }
 
 #alert-confirm-pass {

@@ -6,7 +6,7 @@
 {{end}}
 
 <form method="post" action="/login" class="auth-form">
-    <h1>{{.title}}</h1>
+    <h1 class="main-title">{{.title}}</h1>
     <div class="input-container">
         <label for="email" class="label">Email:</label>
         <input type="email" id="email" name="email" placeholder="you@example.com" class="input-box" required>
@@ -17,7 +17,7 @@
     </div>
 
     <input type="submit" value="เข้าสู่ระบบ" class="submit-btn">
-    <p>ยังไม่มีบัญชี? <a href="/register">ลงทะเบียน</a></p>
+    <p class="label">ยังไม่มีบัญชี? <a href="/register" class="label">ลงทะเบียน</a></p>
 </form>
 
 
